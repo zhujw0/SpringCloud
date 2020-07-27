@@ -1,0 +1,14 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /client2  #访问项目前缀
+spring:
+  application:
+    name: eureka-client2   #服务注册中心的名称
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.eureka-server.com:1111/eureka/  #对应Eureka-server中的url
+  instance:
+    hostname: www.client.com
